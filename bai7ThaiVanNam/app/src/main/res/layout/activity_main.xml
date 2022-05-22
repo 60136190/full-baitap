@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edt1"
+        android:layout_width="184dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:freezesText="false"
+        android:inputType="textPersonName"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnthem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="53dp"
+        android:layout_marginLeft="53dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:text="Thêm"
+        app:backgroundTint="#6864D6"
+        app:layout_constraintEnd_toStartOf="@+id/btnxoa"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt1" />
+
+    <Button
+        android:id="@+id/btnxoa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Xóa"
+        app:backgroundTint="#F62222"
+        app:layout_constraintEnd_toStartOf="@+id/btnsua"
+        app:layout_constraintStart_toEndOf="@+id/btnthem"
+        app:layout_constraintTop_toBottomOf="@+id/edt1" />
+
+    <Button
+        android:id="@+id/btnsua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginRight="54dp"
+        android:text="Sửa"
+        app:backgroundTint="#6864D6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnxoa"
+        app:layout_constraintTop_toBottomOf="@+id/edt1" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginRight="51dp"
+        android:text="Tên Quốc Gia"
+        app:layout_constraintEnd_toStartOf="@+id/edt1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/lvds"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="62dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="3dp"
+        android:background="#C3D5D6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnxoa"
+        app:layout_constraintVertical_bias="0.468" />
+</androidx.constraintlayout.widget.ConstraintLayout>
